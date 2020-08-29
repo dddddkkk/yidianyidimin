@@ -7,6 +7,9 @@
     <insert id="query" parameterType="com.yidianyidi.hun.navigator.modle.po.ClassifyPO">
         INSERT INTO classify value (#{name},now(),now())
     </insert>
+    <select id="queryAll" resultType="com.yidianyidi.hun.navigator.modle.po.ClassifyPO">
+        select * from classify ;
+    </select>
 
 
 
